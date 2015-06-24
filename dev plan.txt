@@ -1,0 +1,106 @@
+﻿Website
+GameWatcher.com (?)
+Video game news resource gatherer
+
+
+Reason - New games get announced all the time.  Sometime their release dates and relevant gameplay is shown along side.  Other times we have to wait for months if not years from the first teaser.  This site is built to make it easy to follow, or watch, games from reveal to release.  It will be a concise place to find a games information and news.
+
+
+Important elements
+* Basic game info
+   * name
+   * developer
+   * publisher
+   * release date 
+      * different regions?
+   * price
+      * again, different regions?
+      * preorder bundles
+         * price, content, availability
+   * platforms
+   * rating
+* Official news
+   * trailers
+   * dev blog
+   * email updates
+* News from other gaming sites
+   * Relevant outbound links
+* Account login/create to follow multiple games
+   * Have a personalized “watchlist” 
+   * set notification preferences
+      * monthly/weekly/daily/immediate
+      * email updates?
+   * see other friends’/accounts’ lists
+* forums? (seems unnecessary)
+   * suggest games to add
+
+
+Project issues
+* Database to handle this.  
+   * SQL? Not entirely sure, lacking experience
+* What games are included? 
+   *  I want to include indies, but how do we decide
+   * Older games being re-released? (not remasters)
+   * keep games on site after release? (I think so, allows updates for dlc, actual updates, and announcements)
+   * Just games.  No hardware/peripherals.  Only included in their reference to games
+* How to gather this information?
+   *  Automatic web listeners? 
+   * Or actual human “field agents”?
+* Outside websites
+   * distinction between primary (developer) and secondary (game news) information
+   * which to include?
+   * what types of articles to include?
+      * no opinion, editorial, or reviews
+* No reviews in general
+* Site hosting and maintenance
+   * absolutely 0 experience
+   * prefer to learn it myself
+* Project scale
+   * how scalable is this service for so many games
+   * team size: just me or large team
+      * honestly, probably just start as me, and evaluate moving forward
+      * possible additions
+         * designer for layout and graphic design
+         * site and database maintenance
+         * account and security manager
+
+
+Development Path
+1. Proof of concept
+   1. Build SQL database (or choose another)
+      1. learn SQL
+   1. Build site page
+   2. Integrate database with page
+      1. relevant information at this stage
+         1. basic game info (no localization)
+         2. official news from developers
+   1. Development plans
+      1. Version Control System
+1. Alpha
+   1. Host site
+      1. learn about hosting services and feature
+      2. exact same as before, just hosted
+   1. New features added
+      1. secondary news feed
+      2. account
+         1. no forums yet
+   1. Start work on news gatherers
+      1. decide on human or automatic
+      2. develop just to check primary sources
+   1. Begin testing with real people
+1. Beta
+   1. Possible redesign
+      1. professional input
+   1. Full public beta, site is open
+      1. test traffic
+      2. server handling
+      3. security fortification
+   1. Finalize “watchers”
+      1. develop different version for secondary sources
+   1. create forums (?)
+   2. Localization of prices and release dates
+      1. full site translations?
+   1. Add ability to donate
+   2. Decide on staffing
+1. Release
+   1. make sure it works and keeps working
