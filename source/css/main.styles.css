@@ -1,0 +1,13 @@
+td #nav {
+    bgcolor: gray;
+    colspan: 2;
+    height: 100px;
+}
+
+#navTitle {
+    display: inline-block;
+}
+
+#navSearch {
+    width: 60%;
+}

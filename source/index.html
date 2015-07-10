@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <!-- CSS Styles -->
+    <link href="css/main.styles.css" rel="stylesheet">
+    <link href="css/game.styles.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="js/libs/angular.min.js"></script>
+</head>
+<body ng-app="my.app">
+
+<div class="main" ng-controller="main.controller">
+    <table width="80%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0">
+        <tr>
+
+            <!-- ============ HEADER SECTION ============== -->
+            <td id="header">
+
+                <!-- home / title button -->
+                <a href="index.html"><h1 id="navTitle">{{ title }}</h1></a>
+
+                <!-- search bar -->
+                <span><input type="search" id="navSearch"/></span>
+
+                <!-- advanced search? -->
+                <button>Advanced</button>
+
+                <!-- login/create account links -->
+                <a href="#">Login</a>
+                |
+                <a href="#">Create</a>
+
+            </td>
+        </tr>
+
+
+    <div ng-repeat="id in games">
+        <game info="id"></game>
+    </div>
+
+    </table>
+</div>
+
+<!-- Modules -->
+<script src="js/app.js"></script>
+
+<!-- Controllers -->
+<script src="js/controllers/main.controller.js"></script>
+
+<!-- Directives -->
+<script src="js/directives/game.directive.js"></script>
+</body>
+</html>
